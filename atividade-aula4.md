@@ -8,7 +8,7 @@
 ## Procedimento: instalação de net-tools/traceroute, verificação do openssh-server, uso de route -n, w, ipconfig, netstat -an e configuração do NAT, em ordem.
 ## Problemas e Soluções: 
 
-#### Sintoma: O comando ssh -p 5222 administrador@127.0.0.1 retorna uma mensagem informando que a conexão foi recusada (ssh: connect to host 127.0.0.1 port 5222: Connection refused).
+### Sintoma: O comando ssh -p 5222 administrador@127.0.0.1 retorna uma mensagem informando que a conexão foi recusada (ssh: connect to host 127.0.0.1 port 5222: Connection refused).
 
     Causa principal: A regra de redirecionamento de portas (Port Forwarding) não foi configurada corretamente nas configurações de rede da máquina virtual no VirtualBox, ou o serviço ssh (OpenSSH Server) não está ativo e rodando dentro do Linux Guest.
 
