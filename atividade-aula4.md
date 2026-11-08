@@ -40,7 +40,7 @@
 
   por fim, verificamos a porta no host:
 
-        `netstat -an | grep 522` (ou netstat -an | findstr 5222 no windows)
+        netstat -an | grep 522` (ou netstat -an | findstr 5222 no windows)
 
 ### Conclusão
 
