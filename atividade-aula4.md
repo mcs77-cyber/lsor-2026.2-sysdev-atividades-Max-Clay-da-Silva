@@ -6,7 +6,7 @@
 ## Objetivo: diagnóstico de rotas, controle de portas com netstat e acesso remoto SSH em ambiente NAT.
 ## Ambiente: configurações do host Windows e da VM Ubuntu Server 26.04 LTS no VirtualBox (modo de rede, IPs, porta redirecionada).
 ## Procedimento: instalação de net-tools/traceroute, verificação do openssh-server, uso de route -n, w, ipconfig, netstat -an e configuração do NAT, em ordem.
-## Problemas e Soluções: 
+# Problemas e Soluções: 
 
 ### Sintoma: O comando ssh -p 5222 administrador@127.0.0.1 retorna uma mensagem informando que a conexão foi recusada (ssh: connect to host 127.0.0.1 port 5222: Connection refused).
 
