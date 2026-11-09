@@ -1,0 +1,1 @@
+- Link das Imagens: https://github.com/mcs77-cyber/lsor-2026.2-sysdev-atividades-Max-Clay-da-Silva/tree/main/imagens/Imagens%20aula%202
