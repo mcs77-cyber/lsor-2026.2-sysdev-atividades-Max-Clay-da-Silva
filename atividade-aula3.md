@@ -6,9 +6,12 @@
 * **Nome Completo:** Max Clay da Silva
 * **Turma:** 913-A
 * **Data:** 25/10/2026
-* Link das Imagens: https://github.com/mcs77-cyber/lsor-2026.2-sysdev-atividades-Max-Clay-da-Silva/tree/main/imagens/imagens%20aula%203
 
 ---
+
+## 1.5 Links: 
+
+- Link das Imagens: https://github.com/mcs77-cyber/lsor-2026.2-sysdev-atividades-Max-Clay-da-Silva/tree/main/imagens/imagens%20aula%203
 
 ## 2. Objetivo
 Analisar, configurar e comparar o comportamento de interfaces de rede em máquinas virtuais utilizando os modos **NAT (Network Address Translation)** e **Bridge (Ponte)**, validando endereçamento IP, máscara de sub-rede, gateway padrão, tabela de rotas e a acessibilidade a partir da máquina física (host).
