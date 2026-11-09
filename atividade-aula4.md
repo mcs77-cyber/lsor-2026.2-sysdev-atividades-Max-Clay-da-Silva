@@ -1,12 +1,14 @@
 # Acesso Remoto Seguro com OpenSSH e Redirecionamento de Portas no VirtualBox
+## 1- Identificação:
 ### Nome: Max Clay da Silva 
 ### Turma: 913-A
 ### Data: 08/11/2026
 
-## Objetivo: diagnóstico de rotas, controle de portas com netstat e acesso remoto SSH em ambiente NAT.
-## Ambiente: configurações do host Windows e da VM Ubuntu Server 26.04 LTS no VirtualBox (modo de rede, IPs, porta redirecionada).
-## Procedimento: instalação de net-tools/traceroute, verificação do openssh-server, uso de route -n, w, ipconfig, netstat -an e configuração do NAT, em ordem.
-# Problemas e Soluções: 
+## 2- Objetivo: diagnóstico de rotas, controle de portas com netstat e acesso remoto SSH em ambiente NAT.
+## 3- Ambiente: configurações do host Windows e da VM Ubuntu Server 26.04 LTS no VirtualBox (modo de rede, IPs, porta redirecionada).
+## 4- Procedimento: instalação de net-tools/traceroute, verificação do openssh-server, uso de route -n, w, ipconfig, netstat -an e configuração do NAT, em ordem.
+## 5- Testes e evidencias: - https://github.com/mcs77-cyber/lsor-2026.2-sysdev-atividades-Max-Clay-da-Silva/tree/main/imagens/Imagens%20aula%204
+## 6- Problemas e Soluções: 
 
 ### Sintoma: O comando ssh -p 5222 administrador@127.0.0.1 retorna uma mensagem informando que a conexão foi recusada (ssh: connect to host 127.0.0.1 port 5222: Connection refused).
 
@@ -42,6 +44,6 @@
 
         netstat -an | grep 522` (ou netstat -an | findstr 5222 no windows)
 
-### Conclusão
+### 7- Conclusão
 
 Compreender o fluxo de portas, especialmente o mapeamento NAT entre o host e o guest, é necessário para administração de sistemas e para compreenção e enficiencia maxima dos desenvolvedores, Já que esse entendimento transforma a solução de problemas de um processo de tentativa e erro em uma análise técnica estruturada, garantindo a segurança, a conectividade e a eficiência em arquiteturas virtualizadas.
