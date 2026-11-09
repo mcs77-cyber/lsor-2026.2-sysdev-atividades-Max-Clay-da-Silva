@@ -6,7 +6,7 @@
 * **Nome Completo:** Max Clay da Silva
 * **Turma:** 913-A
 * **Data:** 25/10/2026
-* - Link das Imagens: https://github.com/mcs77-cyber/lsor-2026.2-sysdev-atividades-Max-Clay-da-Silva/tree/main/imagens/imagens%20aula%203
+* Link das Imagens: https://github.com/mcs77-cyber/lsor-2026.2-sysdev-atividades-Max-Clay-da-Silva/tree/main/imagens/imagens%20aula%203
 
 ---
 
