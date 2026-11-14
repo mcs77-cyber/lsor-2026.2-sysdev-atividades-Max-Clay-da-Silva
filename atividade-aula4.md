@@ -3,7 +3,7 @@
 ## 1. Identificação
 
 * **Nome completo:** Max Clay da Silva
-* **Turma:** 913-A (Técnico em Desenvolvimento de Sistemas 2026.02)
+* **Turma:** 913-A
 * **Data:** 08/11/2026
 * **Título da prática:** Acesso Remoto Seguro com OpenSSH e Redirecionamento de Portas no VirtualBox
 
