@@ -137,6 +137,8 @@ A saída do `ls -l` apresenta `-rw-rw----` com dono `administrador` e grupo `ti-
 
 ## 5. Testes e Tabela de Comandos
 
+#### Link das imagens: https://github.com/mcs77-cyber/lsor-2026.2-sysdev-atividades-Max-Clay-da-Silva/tree/main/imagens/Imagens%20aula%205
+
 ### Teste A — Acesso permitido para membro do grupo (`fulano`)
 
 Neste teste, inicio uma sessão completa como `fulano` usando `su -` para carregar corretamente seus grupos e tento acessar `/srv/ti-dept`, listar seu conteúdo e criar um arquivo de teste para confirmar que o acesso departamental funciona.
