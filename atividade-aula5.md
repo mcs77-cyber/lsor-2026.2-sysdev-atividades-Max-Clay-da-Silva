@@ -49,10 +49,10 @@ pwd /etc
 ls -F | head -n 15
 sudo tail -n 10 /var/log/auth.log
 ```
-![Bin e Sbin](imagens/Imagens aula 5/aula_5_bin_e_sbin.png)
-![Bin e Sbin confirmando](imagens/Imagens aula 5/aula_5_bin_e_sbin_confirmacao.png)
-![Exploração do FHS e logs de autenticação](imagens/Imagens aula 5/aula_5_15_itens_de_etc.png)
-![Tail](imagens/Imagens aula 5/aula_5_tail_-n_10.png)
+![Bin e Sbin](imagens/Imagens%20aula%205/aula_5_bin_e_sbin.png)
+![Bin e Sbin confirmando](imagens/Imagens%20aula%205/aula_5_bin_e_sbin_confirmacao.png)
+![Exploração do FHS e logs de autenticação](imagens/Imagens%20aula%205/aula_5_15_itens_de_etc.png)
+![Tail](imagens/Imagens%20aula%205/aula_5_tail_-n_10.png)
 
 A saída mostra a estrutura padrão na raiz e confirma com `lrwxrwxrwx` que `/bin` e `/sbin` são links simbólicos apontando para `usr/bin` e `usr/sbin`. Além disso, `pwd` confirma a localização em `/etc`, `ls -F` diferencia arquivos de diretórios (com `/`) e o `auth.log` exibe os registros recentes de autenticação.
 
@@ -67,8 +67,8 @@ sudo mkdir -p ti-dept/projetos /srv/vendas-dept/relatorios
 ls -R 
 ```
 
-![Criação das pastas departamentais com mkdir -p](imagens/Imagens aula 5/aula_5_sudo-mkdir_ti-dept.png)
-![ls -R](imagens/Imagens aula 5/aula_5_ls_-R.png)
+![Criação das pastas departamentais com mkdir -p](imagens/Imagens%20aula%205/aula_5_sudo-mkdir_ti-dept.png)
+![ls -R](imagens/Imagens%20aula%205/aula_5_ls_-R.png)
 
 O comando `ls -R` exibe recursivamente toda a árvore,incluindo (ti-dept, ti-dept/projetos, vendas-dept e vendas-dept/relatorios), comprovando que o `mkdir -p` criou tanto os diretórios pais quanto os subdiretórios sem erros.
 
@@ -87,7 +87,7 @@ id fulano
 id cicrano
 ```
 
-![Criação de grupos e verificação com id](imagens/Imagens aula 5/aula_5_criacao_dos_grupos_e_adicionamento_dos_usuarios.png)
+![Criação de grupos e verificação com id](imagens/Imagens%20aula%205/aula_5_criacao_dos_grupos_e_adicionamento_dos_usuarios.png)
 
 A saída de `id fulano` mostra `ti-group` na lista de grupos secundários do usuário, enquanto `id cicrano` confirma sua inclusão em `vendas-group`, validando que os vínculos foram aplicados corretamente.
 
@@ -106,7 +106,7 @@ sudo chmod -R 770 vendas-dept
 ls -ld ti-dept vendas-dept
 ```
 
-![Donos e permissões das pastas](imagens/Imagens aula 5/aula_5_donos_e_restricoes_das_pastas.png)
+![Donos e permissões das pastas](imagens/Imagens%20aula%205/aula_5_donos_e_restricoes_das_pastas.png)
 
 O primeiro `ls -ld` mostra que as pastas pertenciam inicialmente a `root:root` com permissão `drwxr-xr-x`. Após os comandos `chown` e `chmod`, a saída passa a exibir `drwxrwx---`, com dono `administrador` e o grupo de cada departamento, removendo qualquer acesso para outros usuários, como esperado.
 
@@ -123,7 +123,7 @@ sudo chmod 660 ti-dept/projetos/arquitetura_rede.txt
 ls -l ti-dept/projetos/arquitetura_rede.txt
 ```
 
-![Arquivo departamental com permissão 660](imagens/Imagens aula 5/aula_5_arquivo_confidencial.png)
+![Arquivo departamental com permissão 660](imagens/Imagens%20aula%205/aula_5_arquivo_confidencial.png)
 
 A saída do `ls -l` apresenta `-rw-rw----` com dono `administrador` e grupo `ti-group`, confirmando que leitura e escrita estão restritas ao dono e ao grupo, sem acesso para terceiros.
 
@@ -146,7 +146,7 @@ cat projetos/arquitetura_rede.txt
 exit
 ```
 
-![Teste A: acesso permitido para fulano](imagens/Imagens aula 5/aula_5_teste_A.png)
+![Teste A: acesso permitido para fulano](imagens/Imagens%20aula%205/aula_5_teste_A.png)
 
 O comando `whoami` confirma o usuário `fulano`, que consegue entrar em `/srv/ti-dept` e usar `echo Rede do lab: 172.20.20.0/22" >> projetos/arquitetura_rede.txt`, e depois `cat projetos/arquitetura_rede.txt`, sem bloqueios.
 
@@ -164,7 +164,7 @@ ls
 exit
 ```
 
-![Teste B: acesso bloqueado para cicrano](imagens/Imagens aula 5/aula_5_teste_B.png)
+![Teste B: acesso bloqueado para cicrano](imagens/Imagens%20aula%205/aula_5_teste_B.png)
 
 O terminal retorna `Permission denied` ao tentar entrar em `/srv/ti-dept`, porém deixa entrar ao tentar entrar em `/srv/vendas-dept`, comprovando que `cicrano` está bloqueado pela permissão `770` em ti-dept, mas que ainda pode acessar vendas-dept.
 
@@ -181,7 +181,7 @@ cd /srv/vendas-dept
 exit
 ```
 
-![Teste C: acesso bloqueado para novato](imagens/Imagens aula 5/aula_5_teste_C.png)
+![Teste C: acesso bloqueado para novato](imagens/Imagens%20aula%205/aula_5_teste_C.png)
 
 Em ambas as tentativas, o sistema exibe `Permission denied`, demonstrando que os outros estão bloqueados efetivamente de acessar qualquer departamento por estarem fora dos grupos autorizados.
 
@@ -197,7 +197,7 @@ sudo mkdir -p diretoria-dept
 sudo groupadd diretoria-group
 sudo usermod -aG diretoria-group beltrano
 ```
-![Desafio: criação da diretoria](imagens/Imagens aula 5/aula_5_desafio_parte_1.png)
+![Desafio: criação da diretoria](imagens/Imagens%20aula%205/aula_5_desafio_parte_1.png)
 ```
 sudo chown -R administrador:diretoria-group diretoria-dept
 sudo chmod -R 770 diretoria-dept
@@ -206,7 +206,7 @@ sudo touch diretoria-dept/orcamento.txt
 sudo chown administrador:diretoria-group diretoria-dept/orcamento.txt
 sudo chmod 660 diretoria-dept/orcamento.txt
 ```
-![Desafio: sudo chown e touch](imagens/Imagens aula 5/aula_5_desafio_parte_2.png)
+![Desafio: sudo chown e touch](imagens/Imagens%20aula%205/aula_5_desafio_parte_2.png)
 ```
 
 su - beltrano
@@ -215,14 +215,14 @@ echo "Orcamento baixo, recursos necessarios imediatamente" >> orcamento.txt
 cat orcamento.txt
 exit
 ```
-![Desafio: beltrano](imagens/Imagens aula 5/aula_5_desafio_parte_3(beltrano).png)
+![Desafio: beltrano](imagens/Imagens%20aula%205/aula_5_desafio_parte_3(beltrano).png)
 ```
 su - fulano
 cd /srv/diretoria-dept
 exit
 ```
 
-![Desafio: fulano](imagens/Imagens aula 5/aula_5_desafio_parte_4(fulano).png)
+![Desafio: fulano](imagens/Imagens%20aula%205/aula_5_desafio_parte_4(fulano).png)
 
 A saída mostra que `beltrano` (membro de `diretoria-group`) acessa `/srv/diretoria-dept` e da echo no arquivo `orcamento.txt` normalmente, enquanto `fulano` recebe `Permission denied`, confirmando o isolamento total do novo departamento.
 
