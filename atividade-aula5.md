@@ -49,7 +49,7 @@ pwd /etc
 ls -F | head -n 15
 sudo tail -n 10 /var/log/auth.log
 ```
-![Bin e Sbin](imagens/Imagens%20aula%205/aula_5_bin_e_sbin.png)
+![Bin e Sbin](imagens/imagens/Imagens%20aula%205/aula_5_bin_e_sbin_.png)
 
 
 ![Bin e Sbin confirmando](imagens/Imagens%20aula%205/aula_5_bin_e_sbin_confirmacao.png)
