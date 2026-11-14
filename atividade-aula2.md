@@ -123,12 +123,11 @@ A listagem confirma que `config-redes.txt` possui permissões `-rw-rw----`, pert
 
 ### Teste A — Validação com usuário do grupo (`fulano`)
 
-Neste teste, alternei para a sessão do usuário `fulano` utilizando `su - fulano`, naveguei até `/srv/projeto`, listei o conteúdo e adicionei uma nova linha ao arquivo `config-redes.txt` com `echo ... >>` para validar as permissões de leitura, escrita e execução do grupo `devs`.
+Neste teste, alternei para a sessão do usuário `fulano` utilizando `su - fulano`, naveguei até `/srv/projeto`, e adicionei uma nova linha ao arquivo `config-redes.txt` com `echo ... >>` para validar as permissões de leitura, escrita e execução do grupo `devs`.
 
 ```bash
 su - fulano
 cd /srv/projeto
-ls -l
 echo "Revisado por Fulano" >> config-redes.txt
 cat config-redes.txt
 exit
