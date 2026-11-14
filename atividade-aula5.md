@@ -50,8 +50,14 @@ ls -F | head -n 15
 sudo tail -n 10 /var/log/auth.log
 ```
 ![Bin e Sbin](imagens/Imagens%20aula%205/aula_5_bin_e_sbin.png)
+
+
 ![Bin e Sbin confirmando](imagens/Imagens%20aula%205/aula_5_bin_e_sbin_confirmacao.png)
+
+
 ![Exploração do FHS e logs de autenticação](imagens/Imagens%20aula%205/aula_5_15_itens_de_etc.png)
+
+
 ![Tail](imagens/Imagens%20aula%205/aula_5_tail_-n_10.png)
 
 A saída mostra a estrutura padrão na raiz e confirma com `lrwxrwxrwx` que `/bin` e `/sbin` são links simbólicos apontando para `usr/bin` e `usr/sbin`. Além disso, `pwd` confirma a localização em `/etc`, `ls -F` diferencia arquivos de diretórios (com `/`) e o `auth.log` exibe os registros recentes de autenticação.
