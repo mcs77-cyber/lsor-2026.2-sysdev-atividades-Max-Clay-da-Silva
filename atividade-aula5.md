@@ -67,7 +67,7 @@ sudo mkdir -p ti-dept/projetos /srv/vendas-dept/relatorios
 ls -R 
 ```
 
-![Criação das pastas departamentais com mkdir -p](imagens/Imagens_aula_5/aula_5_sudo-mkdir_ti-dept.png)
+![Criação das pastas departamentais com mkdir -p](imagens/Imagens aula 5/aula_5_sudo-mkdir_ti-dept.png)
 ![ls -R](imagens/Imagens aula 5/aula_5_ls_-R.png)
 
 O comando `ls -R` exibe recursivamente toda a árvore,incluindo (ti-dept, ti-dept/projetos, vendas-dept e vendas-dept/relatorios), comprovando que o `mkdir -p` criou tanto os diretórios pais quanto os subdiretórios sem erros.
