@@ -22,7 +22,7 @@ O objetivo desta prática foi configurar, diagnosticar e validar o acesso remoto
 
 ## 3. Ambiente
 
-* **Host (Máquina Física):** Sistema Operacional Windows com cliente OpenSSH e utilitários `ipconfig` / `netstat`.
+* **Host (Máquina Física):** Sistema Operacional Windows com cliente OpenSSH e utilitários `ipconfig` / `netstat` (fotos tiradas em casa em um sistema linux, por isso as diferenças).
 * **Hipervisor:** Oracle VM VirtualBox.
 * **Máquina Virtual (Guest):** `ubuntu-server` — Ubuntu Server 26.04 LTS (768 MB de RAM, 1 vCPU).
 * **Configuração de Rede:**
