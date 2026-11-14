@@ -236,7 +236,7 @@ A saída mostra que `beltrano` (membro de `diretoria-group`) acessa `/srv/direto
 
 ### Tabela de Comandos (Seção 6.4)
 
-| Comando | O que significa e/ou o que faz |
+| Comando | O que significa e o que faz |
 | :--- | :--- |
 | `cd /etc` | Altera o diretório de trabalho atual (*change directory*) para `/etc`, onde ficam os arquivos de configuração do sistema. |
 | `pwd` | Exibe o caminho absoluto completo do diretório em que o usuário está no momento (*print working directory*). |
